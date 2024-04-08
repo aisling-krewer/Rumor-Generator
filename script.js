@@ -33,6 +33,19 @@ function generateRumor() {
         { text: 'Just heard that {name}, {name}, and {name} were seen leaving a courthouse. What could they be involved in?', count: 3 },
         { text: 'Spotted: {name} at a private investigator\'s office. Who could they be investigating?', count: 1 },
         { text: 'Rumor has it that {name} and {name} were seen at a known mob hangout. Are they in with the wrong crowd?', count: 2 },
+        { text: 'Spotted: {name} on a cozy dinner date with {name}. Is romance in the air?', count: 2 },
+        { text: 'Rumor has it that {name} and {name} are no longer speaking. What could have caused this fallout?', count: 2 },
+        { text: 'Word on the street is that {name} was seen leaving {name}’s apartment early in the morning. Are they the new hot couple?', count: 2 },
+        { text: 'Just heard that {name}, {name}, and {name} are starting a book club together. Intellectual bonding, perhaps?', count: 3 },
+        { text: 'Spotted: {name} at a romantic candlelit dinner with {name}. Are they taking their relationship to the next level?', count: 2 },
+        { text: 'Rumor has it that {name} and {name} were seen arguing in public. Is there trouble brewing?', count: 2 },
+        { text: 'Word on the street is that {name} is secretly in love with {name}. Will they confess their feelings?', count: 2 },
+        { text: 'Just heard that {name}, {name}, and {name} were seen on a group vacation. Are they the new squad in town?', count: 3 },
+        { text: 'Spotted: {name} holding hands with {name} at a movie premiere. Are they Hollywood’s newest couple?', count: 2 },
+        { text: 'Rumor has it that {name} and {name} are having a secret affair. Can anyone confirm?', count: 2 },
+        { text: 'Word on the street is that {name} is planning a surprise party for {name}. Isn’t that sweet?', count: 2 },
+        { text: 'Spotted: {name} at the scene of a major crime. Are they a witness, a victim, or the perpetrator?', count: 1 },
+        { text: 'Just heard that {name}, {name}, and {name} have been chosen for a top-secret government mission.', count: 3 },  
     ];
     const rumor = getRandomRumor(rumors, names);
     document.getElementById('rumor').innerText = rumor;
