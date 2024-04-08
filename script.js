@@ -41,11 +41,20 @@ function generateRumor() {
         { text: 'Rumor has it that {name} and {name} were seen arguing in public. Is there trouble brewing?', count: 2 },
         { text: 'Word on the street is that {name} is secretly in love with {name}. Will they confess their feelings?', count: 2 },
         { text: 'Just heard that {name}, {name}, and {name} were seen on a group vacation. Are they the new squad in town?', count: 3 },
-        { text: 'Spotted: {name} holding hands with {name} at a movie premiere. Are they Hollywood’s newest couple?', count: 2 },
+        { text: 'Spotted: {name} holding hands with {name} at a movie premiere. Are they the city\'s newest couple?', count: 2 },
         { text: 'Rumor has it that {name} and {name} are having a secret affair. Can anyone confirm?', count: 2 },
         { text: 'Word on the street is that {name} is planning a surprise party for {name}. Isn’t that sweet?', count: 2 },
         { text: 'Spotted: {name} at the scene of a major crime. Are they a witness, a victim, or the perpetrator?', count: 1 },
         { text: 'Just heard that {name}, {name}, and {name} have been chosen for a top-secret government mission.', count: 3 },  
+        { text: 'Whispers abound about a tangled love square involving {name}, {name}, {name}, and {name}—who will end up with whom?', count: 4 },
+        { text: 'Rumor has it {name} and {name} were caught spreading gossip about {name} at the office—office politics heating up.', count: 3 },
+        { text: 'Whispers abound about {name} and {name} engaging in a heated debate on social media, with their followers taking sides—online drama escalating.', count: 2 },
+        { text: '{name} spotted cozying up with a mystery companion at a secluded beach resort.', count: 1 },
+        { text: 'Insider scoop suggests {name} might be launching a skincare line—get ready for that glow-up!', count: 1 },
+        { text: 'Heard {name} was seen leaving a fancy restaurant with an unexpected date.', count: 1 },
+        { text: 'Reports suggest {name} has been spotted patrolling the city\'s rooftops with a new sidekick', count: 1 },
+        { text: 'Spotted: {name} attending a clandestine meeting of the Watchdogs, igniting speculation about their next mission.', count: 1 },
+        { text: 'Allegedly, {name} has been consulting with a renowned scientist to enhance their superpowers, sparking curiosity among fellow metahumans.', count: 1 },
     ];
     const rumor = getRandomRumor(rumors, names);
     document.getElementById('rumor').innerText = rumor;
