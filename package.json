@@ -5,8 +5,7 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js && echo 'Build completed'"
-  },
+    "build": "sed -e 's|process.env.APIKEY|\"$APIKEY\"|g' -e 's|process.env.AUTHDOMAIN|\"$AUTHDOMAIN\"|g' -e 's|process.env.DATABASEURL|\"$DATABASEURL\"|g' -e 's|process.env.PROJECTID|\"$PROJECTID\"|g' -e 's|process.env.STORAGEBUCKET|\"$STORAGEBUCKET\"|g' -e 's|process.env.MESSAGINGSENDERID|\"$MESSAGINGSENDERID\"|g' -e 's|process.env.APPID|\"$APPID\"|g' -e 's|process.env.MEASUREMENTID|\"$MEASUREMENTID\"|g' script.js > build/script.js && echo 'Build completed'"  },
   "author": "",
   "license": "ISC"
 }
