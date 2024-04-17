@@ -4,14 +4,14 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebas
 import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
 
 const firebaseConfig = {
-    APIKEY: PROCESS.ENV.APIKEY,
-    AUTHDOMAIN: PROCESS.ENV.AUTHDOMAIN,
-    DATABASEURL: PROCESS.ENV.DATABASEURL,
-    PROJECTID: PROCESS.ENV.PROJECTID,
-    STORAGEBUCKET: PROCESS.ENV.STORAGEBUCKET,
-    MESSAGINGSENDERID:PROCESS.ENV.MESSAGINGSENDERID,
-    APPID: PROCESS.ENV.APPID,
-    MEASUREMENTID: PROCESS.ENV.MEASUREMENTID
+    APIKEY: process.env.APIKEY,
+    AUTHDOMAIN: process.env.AUTHDOMAIN,
+    DATABASEURL: process.env.DATABASEURL,
+    PROJECTID: process.env.PROJECTID,
+    STORAGEBUCKET: process.env.STORAGEBUCKET,
+    MESSAGINGSENDERID:process.env.MESSAGINGSENDERID,
+    APPID: process.env.APPID,
+    MEASUREMENTID: process.env.MEASUREMENTID
 };
 console.log('boop');
 const app = initializeApp(firebaseConfig);
