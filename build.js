@@ -5,11 +5,23 @@ const path = require('path');
 const scriptFilePath = path.join(__dirname, 'script.js');
 let scriptContent = fs.readFileSync(scriptFilePath, 'utf8');
 
-// Inject process.env variables
-scriptContent = scriptContent.replace(
-    /process\.env\.([A-Z0-9_]+)/g,
-    (_, variable) => `'${process.env[variable] || ''}'`
-);
+// Define environment variables object
+const envVariables = {
+    APIKEY: process.env.APIKEY || '',
+    AUTHDOMAIN: process.env.AUTHDOMAIN || '',
+    DATABASEURL: process.env.DATABASEURL || '',
+    PROJECTID: process.env.PROJECTID || '',
+    STORAGEBUCKET: process.env.STORAGEBUCKET || '',
+    MESSAGINGSENDERID: process.env.MESSAGINGSENDERID || '',
+    APPID: process.env.APPID || '',
+    MEASUREMENTID: process.env.MEASUREMENTID || ''
+};
+
+// Inject environment variables
+Object.keys(envVariables).forEach(key => {
+    const regex = new RegExp(`process\\.env\\.${key}`, 'g');
+    scriptContent = scriptContent.replace(regex, `'${envVariables[key]}'`);
+});
 
 // Write the modified script file
 fs.writeFileSync(scriptFilePath, scriptContent, 'utf8');
