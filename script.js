@@ -4,14 +4,14 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebas
 import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js";
 
 const firebaseConfig = {
-    APIKEY: process.env.APIKEY,
-    AUTHDOMAIN: process.env.AUTHDOMAIN,
-    DATABASEURL: process.env.DATABASEURL,
-    PROJECTID: process.env.PROJECTID,
-    STORAGEBUCKET: process.env.STORAGEBUCKET,
-    MESSAGINGSENDERID:process.env.MESSAGINGSENDERID,
-    APPID: process.env.APPID,
-    MEASUREMENTID: process.env.MEASUREMENTID
+    apiKey: "AIzaSyAZBr_5pQt7IduSgO9SgpKpWsJ9Oy1IyOQ",
+    authDomain: "rumor-6d320.firebaseapp.com",
+    databaseURL: "https://rumor-6d320-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "rumor-6d320",
+    storageBucket: "rumor-6d320.appspot.com",
+    messagingSenderId: "627011407326",
+    appId: "1:627011407326:web:44089936b556873a9ae14f",
+    measurementId: "G-WXL0H2QS1W"  
 };
 console.log('boop');
 const app = initializeApp(firebaseConfig);
